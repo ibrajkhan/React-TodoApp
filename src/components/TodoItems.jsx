@@ -1,10 +1,11 @@
 import React from "react";
 
-function TOdoItems() {
+function TOdoItems(props) {
+  console.log(props);
   return (
-    <div className = "todo-item">
+    <div className="todo-item">
       <input type="checkbox" />
-      <p>Some random text</p> 
+      <p>{props.Text}</p>
     </div>
   );
 }
